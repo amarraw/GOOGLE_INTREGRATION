@@ -19,5 +19,6 @@ from django.urls import path , include
 
 urlpatterns = [
     path('admin/', admin.site.urls),
-    path("", include("google_auth.urls"))
+    path("", include("google_auth.urls")),
+    path('google-drive/', include('google_drive.urls')),
 ]
